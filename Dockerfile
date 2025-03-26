@@ -6,9 +6,9 @@ WORKDIR $CATALINA_HOME
 
 RUN rm -rf webapps && mv webapps.dist webapps
 
-COPY .Vuln2Secure/index.jsp webapps/ROOT/index.jsp
-COPY .Vuln2Secure/upload.jsp webapps/ROOT/
-COPY .Vuln2Secure/cos.jar lib/
+COPY ./index.jsp webapps/ROOT/index.jsp
+COPY ./upload.jsp webapps/ROOT/
+COPY ./cos.jar lib/
 
 EXPOSE 8080
 
